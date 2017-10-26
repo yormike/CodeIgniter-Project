@@ -8,9 +8,11 @@ class Dropdown_manager extends MY_Controller {
 	}
 
 	public function index() {
+		
 		$data['language_list'] = $this->_clean_table($this->dm->get_language());
 
 		$this->load->template("admin/dropdown/language_list", $data);
+
 	}
 
 	public function save_language() {

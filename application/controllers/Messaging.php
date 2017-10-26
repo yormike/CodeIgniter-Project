@@ -8,7 +8,6 @@ class Messaging extends MY_Controller {
 
 		$this->load->library("encryption");
 		$this->encryption->initialize(array('driver' => 'openssl'));
-
 		$this->load->model("messaging_model", "messaging");
 		$this->load->model("User_model", "user");
 		$this->loggedUser = $this->session->userdata("user_id");
