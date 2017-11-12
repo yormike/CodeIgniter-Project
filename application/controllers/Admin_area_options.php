@@ -43,7 +43,7 @@ class Admin_area_options extends MY_Controller {
 			$insert_data['user_label'] = $this->input->post('user_label');
 			$insert_data['lawyer_label'] = $this->input->post('lawyer_label');
 			$areas = $this->input->post('areas');
-			// print_r($areas); exit;
+			// print_r($areas); exit
 			if($option_id) $insert_data['parent_id'] = $option_id;
 
 			if($this->input->post('category'))
